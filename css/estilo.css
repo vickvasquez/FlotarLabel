@@ -23,9 +23,10 @@ body {
   width: 100%;
 }
 form {
-  height: 200px;
+  height: 25 0px;
   margin: 0 auto;
   width: 300px;
+  margin-bottom: 5px;
 }
 form > div {
   position: relative;
@@ -43,13 +44,13 @@ form input {
   padding: 8px 12px;
 }
 form input:valid {
-  background: none;
+  background: #fff;
 }
 form input:focus {
-  border: 2px solid #ff4500;
+  border: 2px solid #0080c0;
 }
 form input:focus + label {
-  background: #ff4500;
+  background: #0080c0;
   color: #fff;
   z-index: 2;
   font-size: 70%;
@@ -61,4 +62,27 @@ form label {
   position: absolute;
   color: #000;
   padding: 7px 6px;
+}
+.derecha input:focus +label {
+  top: 2px;
+  bottom: 2px;
+  padding-top: 10px;
+  padding-left: 20px;
+  left: 70%;
+}
+.derecha label {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.izquierda input:focus + label {
+  text-align: right;
+  padding-top: 10px;
+  left: -70%;
+}
+.izquierda label {
+  top: 2px;
+  bottom: 2px;
+  width: 100%;
 }
